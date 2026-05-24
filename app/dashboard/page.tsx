@@ -10,6 +10,7 @@ import {
   Settings,
   FileText,
   Users,
+  MessageCircle,
 } from 'lucide-react';
 import { useAppSelector } from '../store/hooks';
 import { colors } from '../utils/colors';
@@ -59,17 +60,9 @@ export default function Dashboard() {
             <Home className="mr-3 h-5 w-5" />
             Dashboard
           </a>
-          <a href="#" className="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-gray-700 hover:bg-gray-50 mt-1">
-            <FileText className="mr-3 h-5 w-5" />
-            Reports
-          </a>
-          <a href="#" className="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-gray-700 hover:bg-gray-50 mt-1">
-            <Users className="mr-3 h-5 w-5" />
-            Users
-          </a>
-          <a href="#" className="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-gray-700 hover:bg-gray-50 mt-1">
-            <Settings className="mr-3 h-5 w-5" />
-            Settings
+          <a href="/dashboard/customerSupport" className="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-gray-700 hover:bg-gray-50 mt-1">
+            <MessageCircle className="mr-3 h-5 w-5" />
+            Customer support
           </a>
         </nav>
       </div>
